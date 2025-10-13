@@ -1,33 +1,51 @@
+# STUDENT (1 pt): COMPLETE THE COMMENT ID BLOCK
+####################################################
+# Student Name: 
+# Date Completed:
+# Course Name: Intro to Computer Science
+# Assignment: Intro to PyGame
+# Original Authors: Mr. Alfonso & Mr. Reed
+# Date Created: 10/13/2025
+####################################################
+
+
+
 # imports for pygame
 import pygame, sys
 from pygame.locals import *
 
 # canvas variables
+
 ###
-# SET TWO VARIABLES, ONE FOR width AND ONE FOR height
+# STUDENT (2 pts): SET TWO VARIABLES, ONE FOR width AND ONE FOR height
 # AND SET THESE TO THE VALUES YOU WANT FOR THE CANVAS
 # SIZE
 ###
 
-### WRITE YOUR CODE HERE FOR THE CANVAS VARIABLES ###
-
 # other variables
+# explanation: makes it so that the original position 
+# of your image is in the middle of your screen
 image_x_pos = width // 2
 image_y_pos = height // 2
 
 ###
-# SET TWO VARIABLES, ONE FOR image_x_delta AND ONE FOR 
+# STUDENT (2 pts): SET TWO VARIABLES, ONE FOR image_x_delta AND ONE FOR 
 # image_y_delta AND SET THESE VALUES. THESE VALUES WILL
 # DETERMINE HOW FAR YOU IMAGE MOVES FOR EACH KEY PRESS.
 ###
 
-### WRITE YOUR CODE HERE FOR THE MOVEMENT VARIABLES ###
-
 # frame rate
 fps = 60
 
-# colors
-background_color = (255, 255, 255)
+###
+# STUDENT (3 pts): SET THREE VARIABLES, ONE FOR r, ONE for g, 
+# ONE for b, AND SET THESE VALUES SUCH THAT EACH
+# VARIABLE IS IN BETWEEN THE VALUES OF 0 TO 255
+###
+
+
+# Sets background color 
+background_color = (r, g, b)
 
 # initializing pygame, setting up the surface (canvas)
 pygame.init()
