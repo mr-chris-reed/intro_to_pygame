@@ -52,10 +52,29 @@ pygame.init()
 canvas = pygame.display.set_mode((width, height))
 pygame.display.set_caption("PYGAME TEST") # add a caption for your canvas
 
-# import image
-myPic = pygame.image.load("myImage.png").convert_alpha()
+###
+# STUDENT (4 pt): 
+#
+# 1. REPLACE "TEST.png" (keep the quotes)
+# WITH THE ACTUAL FILE NAME AND EXTENSION OF THE 
+# IMAGE YOU WANT TO USE
+#
+# 2. CREATE A VARIABLE NAMED "picScaledFactor" THAT
+# STORES AN INTEGER OF YOUR CHOOSING
+#
+# 3. CREATE A VARIABLE NAMED "scaledPicHeight" THAT
+# STORES THE VALUE OF myPicHeight * picScaledFactor
+#
+# 4. CREATE A VARAIBLE NAMED "scaledPicWidth" THAT
+# STORES THE VALUE OF myPicWidth * picScaledFactor
+###
+myPic = pygame.image.load("TEST.png").convert_alpha()
 myPicHeight = myPic.get_height()
 myPicWidth = myPic.get_width()
+
+# Insert Steps 2 - 4 within this space.
+
+scaledPic = pygame.transform.scale(myPic, (scaledPicWidth, scaledPicHeight))
 
 # clock to set FPS
 clock = pygame.time.Clock()
@@ -88,7 +107,7 @@ while running:
         image_x_pos += image_x_delta
 
     # blit your image
-    canvas.blit(myPic, (image_x_pos, image_y_pos))
+    canvas.blit(scaledPic, (image_x_pos, image_y_pos))
 
     pygame.display.update()
     clock.tick(fps)
